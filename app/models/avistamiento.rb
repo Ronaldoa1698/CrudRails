@@ -1,0 +1,2 @@
+class Avistamiento < ApplicationRecord
+end

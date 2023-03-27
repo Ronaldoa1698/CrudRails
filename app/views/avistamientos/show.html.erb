@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @avistamiento %>
+
+<div>
+  <%= link_to "Edit this avistamiento", edit_avistamiento_path(@avistamiento) %> |
+  <%= link_to "Back to avistamientos", avistamientos_path %>
+
+  <%= button_to "Destroy this avistamiento", @avistamiento, method: :delete %>
+</div>

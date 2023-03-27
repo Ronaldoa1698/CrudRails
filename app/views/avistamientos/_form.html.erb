@@ -1,0 +1,62 @@
+<%= form_with(model: avistamiento) do |form| %>
+  <% if avistamiento.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(avistamiento.errors.count, "error") %> prohibited this avistamiento from being saved:</h2>
+
+      <ul>
+        <% avistamiento.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :nombrecomun, style: "display: block" %>
+    <%= form.text_field :nombrecomun %>
+  </div>
+
+  <div>
+    <%= form.label :nombrecientifico, style: "display: block" %>
+    <%= form.text_field :nombrecientifico %>
+  </div>
+
+  <div>
+    <%= form.label :familia, style: "display: block" %>
+    <%= form.text_field :familia %>
+  </div>
+
+  <div>
+    <%= form.label :especie, style: "display: block" %>
+    <%= form.text_field :especie %>
+  </div>
+
+  <div>
+    <%= form.label :latitud, style: "display: block" %>
+    <%= form.text_field :latitud %>
+  </div>
+
+  <div>
+    <%= form.label :longitud, style: "display: block" %>
+    <%= form.text_field :longitud %>
+  </div>
+
+  <div>
+    <%= form.label :fecha, style: "display: block" %>
+    <%= form.text_field :fecha %>
+  </div>
+
+  <div>
+    <%= form.label :hora, style: "display: block" %>
+    <%= form.text_field :hora %>
+  </div>
+
+  <div>
+    <%= form.label :nombreOrnitologo, style: "display: block" %>
+    <%= form.text_field :nombreOrnitologo %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
